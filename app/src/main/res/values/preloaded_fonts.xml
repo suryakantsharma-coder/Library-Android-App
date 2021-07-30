@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arbutus</item>
+        <item>@font/brawler</item>
+        <item>@font/bree_serif</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/dekko</item>
+        <item>@font/fresca</item>
+        <item>@font/fruktur</item>
+    </array>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chapterActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_chapterActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/swipeTOReferesh_chapterActivity" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeTOReferesh_chapterActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_weight="2.5"
+                android:id="@+id/DownloadSection_LinearLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:elevation="6dp"
+                        android:background="#f45b69"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:weightSum="6"
+                        android:id="@+id/DownloadSection"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:elevation="6dp"
+                            android:textColor="#ffff"
+                            android:layout_weight="5"
+                            android:text="Downloaded Chapters"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="0"
+                            android:id="@+id/dropiconDowload_chapterActivity"
+                            android:src="@drawable/arrow"/>
+
+
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recyclerviewDownload_chapterActivity"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unDownloadSection_LinearLayout"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:elevation="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:weightSum="6"
+                        android:id="@+id/unDownloadSection"
+                        android:background="#f45b69"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:textColor="#ffff"
+                            android:layout_weight="5"
+                            android:background="#f45b69"
+                            android:textStyle="bold"
+                            android:text="UnDownloaded Chapters"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="0"
+                            android:id="@+id/dropiconUNDowload_chapterActivity"
+                            android:src="@drawable/arrow"/>
+
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_chapterActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="0"
+                ads:adUnitId="ca-app-pub-6503885442021113/9161497938">
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

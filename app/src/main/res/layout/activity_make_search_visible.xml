@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".makeSearchVisible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/chemistry_chapterActivity"
+                    android:text="Chemistry" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/physics_chapterActivity"
+                    android:text="physics" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/maths_chapterActivity"
+                    android:text="maths" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/dpp_chapterActivity"
+                    android:text="DPP" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/pyqp_chapterActivity"
+                    android:text="PREVIOUS YEAR " />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/biology_chapterActivity"
+                    android:text="Biology" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/coachingNotes_chapterActivity"
+                    android:text="Coaching Notes" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/CBSE_chapterActivity"
+                    android:text="CBSE" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Book "
+                    android:layout_marginTop="12dp"
+                    android:textSize="16dp"
+                    android:textColor="#141414" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select book name which you want to show in search bar"
+                    android:layout_marginTop="12dp"
+                    android:textSize="14dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/bookSelect_chapterActivity"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Into Search List"
+            android:textColor="#ffffff"
+            android:layout_marginTop="12dp"
+            android:id="@+id/uploadchapter_chapterActivity"
+            android:background="@color/colorAccent"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

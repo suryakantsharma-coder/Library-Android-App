@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".TestSeries.jeeTestSeriesFragments">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/test"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:gravity="center"
+            android:text="Test Series\nfor\n Jee"
+            android:textColor="@color/colorAccent"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/Syllabus"
+                    android:orientation="vertical"
+                    android:elevation="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:background="@drawable/background_round_test">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Syllabus"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:text="Its Contains all type of syllabus regarding Test Series "
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/Unit_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:elevation="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:background="@drawable/background_round_test">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Unit test"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:text="Unit Test This is the Topic Wise Tests of PCM ."
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/Minor_test"
+                    android:orientation="vertical"
+                    android:elevation="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:background="@drawable/background_round_test">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Minor test"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:text="Minor Test This is the Reviews Test of Unit Test.
+To Get a Good Grips On Unit Tests."
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/Major_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:elevation="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:background="@drawable/background_round_test">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Major test"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:text="Major Tests this is the Full Syllabus Tests.
+To Get the actual Test of Final paper."
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/PartTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:elevation="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
+                    android:background="@drawable/background_round_test">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Part Test (JEE Advance)"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:text="Tests Papers Of Jee Advance Which helps to you enhance your Preparation through out the Revision."
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smart.neet_jeefullpakage">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NeetJeeFullPakage">
+
+        <activity android:name=".typeTestSeries"></activity>
+
+        <service
+            android:name=".Services.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Services.GettingToken"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".upgrade_to_DO_thubnail" />
+        <activity android:name=".updateActvityDO" />
+        <activity android:name=".VideosLecture" />
+        <activity android:name=".makeSearchVisible" />
+        <activity android:name=".privacyPolicy" />
+        <activity android:name=".requestActivity" />
+        <activity android:name=".feedbackActivity" />
+        <activity android:name=".joiningActivity" />
+        <activity android:name=".chapterActivity" />
+        <activity android:name=".searchActivity" />
+        <activity android:name=".DownloadProgress" />
+        <activity
+            android:name=".NotificationService"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".DownloadActivity" />
+        <activity android:name=".webviewOpenPdf" />
+        <activity android:name=".uploadChapter" />
+        <activity android:name=".showBooks" />
+        <activity android:name=".uploadActivity" />
+        <activity android:name=".HomeActivity"
+            android:theme="@style/Theme.NeetJeeFullPakage.NoActionBar"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6503885442021113~6726906281" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

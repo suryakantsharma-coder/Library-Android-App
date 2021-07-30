@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_baseline_people_alt_24"
+        android:id="@+id/contactus_NavDrawer"
+        android:title="Join Us " />
+
+    <item
+        android:icon="@drawable/downloadicon"
+        android:id="@+id/download_NavDrawer"
+        android:title="Download"/>
+
+    <item
+        android:icon="@drawable/ic_baseline_feedback_24"
+        android:id="@+id/feedback_NavDrawer"
+        android:title="Feedback"/>
+
+    <item
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:id="@+id/request_NavDrawer"
+        android:title="Request More Books"/>
+
+    <item
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:id="@+id/videoLecture_NavDrawer"
+        android:title="Test Series"/>
+
+
+    <item
+        android:icon="@drawable/ic_baseline_share_24"
+        android:id="@+id/share_NavDrawer"
+        android:title="Share"/>
+
+    <item
+        android:icon="@drawable/ic_baseline_policy_24"
+        android:id="@+id/privacyPolicy_NavDrawer"
+        android:title="Privacy Policy"/>
+
+
+
+</menu>
